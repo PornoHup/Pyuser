@@ -32,11 +32,11 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @UseratorOT - %(levelname)s - %(message)s",
+        format="%(asctime)s - @NezrinSupp - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @UseratorOT - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @Nezrinsupp - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -97,7 +97,7 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 # Yenilənmə
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Goqerti/Userator.git")
+    "https://github.com/PornoHup/Userator.git")
 
 # Konsol
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -356,7 +356,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
                         [custom.Button.url("Kanala Qatıl", "https://t.me/UseratorOT"), custom.Button.url(
                             "Qrupa Qatıl", "https://t.me/UseratorSUP")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/Goqerti/Userator")]
+                            "GitHub", "https://github.com/PornoHup/Userator")]
                     ],
                     link_preview=False
                 )
@@ -369,7 +369,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**U S Σ R Δ T O R** [UseratorOT](https://t.me/UseratorOT) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
+                f"**𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R** [𝐍ə𝐳𝐫𝐢𝐧](https://t.me/NezrinSupp) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
