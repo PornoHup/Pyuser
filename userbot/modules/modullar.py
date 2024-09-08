@@ -1139,34 +1139,34 @@ async def kurucu(event):
 
     await event.edit("╔═══════════════════╗ \n  \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n \t  Ü \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n \t  R \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü \t  ᴍ \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  R \t  İ \n╚══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n Üᴍü \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n Riy \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ\n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  R İ Y A\n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ M \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  RİYAD T \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ M ə \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  RİYAD TA \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ M ə ᴍ \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  RİYAD TAĞ \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ M ə ᴍ ᴍ \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  RİYAD TAĞI \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ M ə ᴍ ᴍ ə \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  RİYAD TAĞİY \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ M ə ᴍ ᴍ ə ᴅ \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  RİYAD TAĞİYE \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n  Ü ᴍ ü ᴅ M ə ᴍ ᴍ ə ᴅ ᴏ \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n  RİYAD TAĞIYEV \n╚═══════════════════╝")
     await asyncio.sleep(1)
-    await event.edit("╔═══════════════════╗ \n    Ü ᴍ ü ᴅ M ə ᴍ ᴍ ə ᴅ ᴏ ᴠ \n╚═══════════════════╝")
+    await event.edit("╔═══════════════════╗ \n    RİYAD TAĞIYEV\n╚═══════════════════╝")
     await asyncio.sleep(6)
 
 
 CmdHelp('modullar').add_command(
-    'usta', None, ' Ümüd Ustaaaa ❤️'
+    'usta', None, ' Riyad Ustaaaa ❤️'
 ).add_command(
     'hav', None, ' İt yaradar'
 ).add_command(
