@@ -97,7 +97,7 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 # Yenilənmə
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/PornoHup/Userator.git")
+    "https://github.com/PornoHup/Pyuser.git")
 
 # Konsol
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -244,7 +244,7 @@ if os.path.exists("dtobrain.check"):
 else:
     LOGS.info("Braincheck faylı yoxdur, getirilir...")
 
-URL = 'https://raw.githubusercontent.com/PornoHup/Userator/master/upbrain.check'
+URL = 'https://raw.githubusercontent.com/PornoHup/Pyuser/master/upbrain.check'
 with open('upbrain.check', 'wb') as load:
     load.write(get(URL).content)
 
@@ -321,7 +321,7 @@ with bot:
             if not event.message.from_id == uid:
                 await event.reply(f'`Salam mən ` @NezrinSupp`! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir NezrinUserBot quraşdıra bilərsən; Kanala bax` @NezrinLogo')
             else:
-                await event.reply(f'`𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R`')
+                await event.reply(f'`𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -333,7 +333,7 @@ with bot:
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Xaiş sadəcə .kömek əmri ilə işladin",
-                    text=f"**𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R** [𝐍ə𝐳𝐫𝐢𝐧](https://t.me/Nezrinsupp) __⚡__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
+                    text=f"**𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭** [𝐍ə𝐳𝐫𝐢𝐧](https://t.me/Nezrinsupp) __⚡__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -349,14 +349,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@UseratorOT",
-                    text="""@UseratorOT'u işlətməyi yoxlayın!
+                    "@nezrinsupp",
+                    text="""@nezrinuserbot işlətməyi yoxlayın!
 Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə edə bilmərsiz! Altdakı GitHub adresindən bütün qurulum haqda məlumat var.""",
                     buttons=[
                         [custom.Button.url("Kanala Qatıl", "https://t.me/NezrinLogo"), custom.Button.url(
                             "Qrupa Qatıl", "https://t.me/NezrinSupp")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/PornoHup/Userator")]
+                            "GitHub", "https://github.com/PornoHup/Pyuser")]
                     ],
                     link_preview=False
                 )
@@ -365,11 +365,11 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sayfa\((.+?)\)")))
         async def sayfa(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌ Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @UseratorOT qur.", cache_time=0, alert=True)
+                return await event.answer("❌ Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NezrinUserbot qur.", cache_time=0, alert=True)
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R** [𝐍ə𝐳𝐫𝐢𝐧](https://t.me/NezrinSupp) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
+                f"**𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭** [𝐍ə𝐳𝐫𝐢𝐧](https://t.me/NezrinSupp) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
