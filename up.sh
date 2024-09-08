@@ -1,4 +1,4 @@
-Userator+="\n𝐍ə𝐳𝐫𝐢𝐧 U S Σ R Δ T O R ✨"
+Userator+="\n𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 ✨"
 MESAJ+="\n "
 MESAJ+="\n✅Kanal: @NezrinLogo"
 MESAJ+="\n✅Qrup: @NezrinSupp"
@@ -37,7 +37,7 @@ echo -e $BOSLUQ
 echo "Repo ✅"
 echo -e $BOSLUQ
 rm -rf Qurulum
-git clone https://github.com/uumud/Qurulum
+git clone https://github.com/PornoHup/Pyuser
 clear
 echo -e $BOSLUQ
 echo -e $MESAJ
