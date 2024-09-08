@@ -32,11 +32,11 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @NezrinSupp - %(levelname)s - %(message)s",
+        format="%(asctime)s - @nezrinlogo - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @Nezrinsupp - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @nezrinlogo - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -236,7 +236,7 @@ if STRING_SESSION:
     bot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 else:
     # pylint: devre dışı=geçersiz ad
-    bot = TelegramClient("userbot", API_KEY, API_HASH)
+    bot = TelegramClient("nezrinuserbot", API_KEY, API_HASH)
 
 
 if os.path.exists("dtobrain.check"):
