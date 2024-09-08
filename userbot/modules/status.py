@@ -44,7 +44,7 @@ async def durums(event):
 **Python {LANG['VERSION']}:** `{python_version()}`
 **TeleThon {LANG['VERSION']}:** `{version.__version__}`
 **{LANG['PLUGIN_COUNT']}:** `{len(CMD_HELP)}`
-**U S Σ R Δ T O R {LANG['VERSION']}:** `{DTO_VERSION}`
+**𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 {LANG['VERSION']}:** `{DTO_VERSION}`
     """)
 
 CmdHelp('status').add_command(
