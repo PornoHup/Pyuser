@@ -80,7 +80,7 @@ async def banall(event):
         except Exception as e:
             await event.reply(str(e))
         await asyncio.sleep(0.3)
-    await event.edit(f"[[U S Σ R Δ T O R](t.me/UseratorOT)]:\n`BANALL prosesi tamamlandı`")
+    await event.edit(f"[[𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭](t.me/nezrinsupp)]:\n`BANALL prosesi tamamlandı`")
 
 
 @register(outgoing=True, pattern="^.addmember ?(.*)", groups_only=True, disable_errors=True)
@@ -100,12 +100,12 @@ async def addmember(event):
     f = 0
     error = "None"
 
-    await event.edit("[U S Σ R Δ T O R]:\n\n`İstifadəçilər toplanılır...`")
+    await event.edit("[𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭]:\n\n`İstifadəçilər toplanılır...`")
     async for user in bot.iter_participants(usrtr.full_chat.id):
         try:
             if error.startswith("Too"):
                 await event.edit(
-                    f"[U S Σ R Δ T O R]\nXəta baş verdi və proses dayandırıldı(`Telethon limiti keçildi, daha sonra yenidən cəhd edin`)\n**Xəta** : \n`{error}`\n\n✔️ `{s}` nəfər dəvət olundu\n❌ `{f}`  nəfər dəvət edilə bilmədi")
+                    f"[𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭]\nXəta baş verdi və proses dayandırıldı(`Telethon limiti keçildi, daha sonra yenidən cəhd edin`)\n**Xəta** : \n`{error}`\n\n✔️ `{s}` nəfər dəvət olundu\n❌ `{f}`  nəfər dəvət edilə bilmədi")
                 if BOTLOG_CHATID is not None:
                     await bot.send_message(BOTLOG_CHATID, "#ADDMEMBER\n"
             f"UĞURLU**{s}** hesab(lar) !!\
@@ -366,7 +366,7 @@ async def _(event):
                         f"__İstifadəçilər bandan çıxardılır...__\n\nHazırda `{succ}` hesab bandan çıxardılıb")
             except MessageNotModifiedError:
                 pass
-    await event.edit(f"[[U S Σ R Δ T O R](t.me/UseratorOT)]:\nUNBANALL prosesi tamamlandı\n`{chat.title}` **qrupunda** `{succ}/{total}` **istifadəçi bandan çıxardıldı**")
+    await event.edit(f"[[𝐍ə𝐳𝐫𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭](t.me/nezrinsupp)]:\nUNBANALL prosesi tamamlandı\n`{chat.title}` **qrupunda** `{succ}/{total}` **istifadəçi bandan çıxardıldı**")
 
 
 Help = CmdHelp('qrup')
