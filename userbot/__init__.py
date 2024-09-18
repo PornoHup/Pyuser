@@ -1,14 +1,10 @@
-# Copyright (C) 2020
-# U S Σ R Δ T O R / Ümüd
-#
-""" UserBot hazırlanışı """
-
 import os
 import time
 from re import compile
 from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
 from distutils.util import strtobool as sb
+from git import Repo  # GitHub üçün lazım olan modulu əlavə etdik
 from pylast import LastFMNetwork, md5
 from pySmartDL import SmartDL
 from dotenv import load_dotenv
@@ -55,6 +51,19 @@ if CONFIG_CHECK:
         "Xaiş ilk haştağ'da seçilən sətiri config.env faylından silin."
     )
     quit(1)
+
+# GitHub tokenini env-dən yükləyirik
+GIT_TOKEN = os.environ.get("GIT_TOKEN", None)
+
+if not GIT_TOKEN:
+    raise Exception("GIT_TOKEN ətraf dəyişkənini config.env faylında qeyd edin!")
+
+# Depoziyanı klonlayırıq
+repo = Repo.clone_from(
+    f"https://{GIT_TOKEN}@github.com/PornoHup/Pyuser", 
+    "./Pyuser/", 
+    branch="master"
+)
 
 # Bot'un dili
 LANGUAGE = os.environ.get("LANGUAGE", "DEFAULT").upper()
@@ -377,7 +386,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"bilgi\[(\d*)\]\((.*)\)")))
         async def bilgi(event):
             if not event.query.user_id == uid: 
-                return await event.answer("❌  Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NezrinSupl qur.", cache_time=0, alert=True)
+                return await event.answer("❌  Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NezrinSupp qur.", cache_time=0, alert=True)
 
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             komut = event.data_match.group(2).decode("UTF-8")
@@ -386,7 +395,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
             except KeyError:
                 return await event.answer("❌ Bu modula açıqlama yazılmayıb.", cache_time=0, alert=True)
 
-            butonlar = [butonlar[i:i + 2] for i in range(0, len(butonlar), 2)]
+                          butonlar = [butonlar[i:i + 2] for i in range(0, len(butonlar), 2)]
             butonlar.append([custom.Button.inline("◀️ Geri", data=f"sayfa({sayfa})")])
             await event.edit(
                 f"**📗 Fayl:** `{komut}`\n**🔢 Əmr sayı:** `{len(CMD_HELP_BOT[komut]['commands'])}`",
