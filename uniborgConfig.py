@@ -23,8 +23,8 @@ class Config(object):
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
     TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "mrconfused")
-    GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
-    GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
+    GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", "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")
+    GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", "pyuser")
     OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
     # TG API sınırı. Bir albümde en fazla 10 ortam olabilir!
     TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
