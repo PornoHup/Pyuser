@@ -53,7 +53,7 @@ if CONFIG_CHECK:
     quit(1)
 
 # GitHub tokenini env-dən yükləyirik
-GIT_TOKEN = os.environ.get("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")
+GIT_TOKEN = os.environ.get("GIT_TOKEN")
 
 if not GIT_TOKEN:
     raise Exception("GIT_TOKEN ətraf dəyişkənini config.env faylında qeyd edin!")
